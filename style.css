@@ -7,6 +7,7 @@
 body {
     height: 100vh;
     width: 100vw;
+   background-color: black;
 }
 
 .navbar {
@@ -49,9 +50,17 @@ body {
     align-items: center;
 }
 
+.search input {
+    width: 30%;
+}
+
+.search button {
+    margin-left: auto;
+}
+
 @media screen and (max-width: 715px) {
     .search {
-        width: 20% ;
+        width: 15% ;
     }
 
     .search input {
@@ -64,6 +73,11 @@ body {
 
     .smolnav a {
         font-size: .8rem;
+    }
+
+    .logo img {
+        width: 200px;
+        height: auto;
     }
 }
 
@@ -93,9 +107,13 @@ body {
 
 
 .smolnav {
-    height: 35px;
+    height: 50px;
     background-color: black;
     width: 100vw;
+
+    white-space: no-wrap;
+    overflow-x: auto;
+    scrollbar-color: burlywood rgb(32, 32, 32);
 }
 
 .smolnav ul {
@@ -106,13 +124,122 @@ body {
 }
 .smolnav li {
     list-style: none;
+    padding: 0 2rem;
 }
 
 .smolnav a {
     text-decoration: none;
     color: burlywood;
     cursor: pointer;
+    text-wrap: nowrap;
 }
 .smolnav a:hover {
     color: white;
 }
+
+.usli {
+    position: fixed;
+    top: 30vh;
+    right: -50px;
+}
+
+.usli1 {
+    background-color: burlywood;
+}
+
+.usli2 {
+    background-color: black;
+}
+
+.usli a {
+    height: 120px;
+    width: 100px;
+  
+    margin-top: 15px;
+    border-radius: 15px 0px 0px 15px;
+
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+.usli1 p {
+    color: black;
+
+    transform: rotate(-90deg);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 22px;
+}
+
+.usli2 p {
+   color: burlywood;
+
+   transform: rotate(-90deg);
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding-top: 22px;
+}
+
+.usli a:hover {
+    transform: translate(-20px, 0px);
+    transition: all 0.2s ease-in;
+}
+
+.hero {
+    height: 80vh;
+    width: 100vw;
+    background-image: url(images/neg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -10;
+
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: first baseline;
+    flex-direction: column;
+
+
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero button{
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: burlywood;
+    border: 2px solid black;
+}
+
+.hero a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.hero h1{
+    font-size: 3.5rem;
+    margin-left: 5vw;
+}
+
+
+
+
+
+
+
+
