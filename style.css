@@ -96,6 +96,14 @@ body::-webkit-scrollbar {
     background-color: white;
 }
 
+.contact:hover {
+    scale: 1.15;
+}
+
+.search:hover {
+    scale: 1.1;
+}
+
 .search input, .search button {
     border: none;
     background-color: transparent;
@@ -110,7 +118,9 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 
-
+.home:hover {
+    scale: 1.2;
+} 
 .smolnav {
     height: 50px;
     background-color: black;
@@ -235,6 +245,7 @@ body::-webkit-scrollbar {
 .hero button:hover {
     background-color: rgb(255, 255, 255);
     transition: all 0.3s ease;
+    scale: 1.2;
 }
 
 .hero h1{
@@ -292,6 +303,7 @@ body::-webkit-scrollbar {
 
 footer {
     background-color: burlywood;
+    
 }
 
 .logofooter {
