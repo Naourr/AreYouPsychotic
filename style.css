@@ -1,3 +1,5 @@
+@import url(colors.css);
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -7,33 +9,40 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: var(--bgdark);
+    color: var(--textdark);
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar { 
+body::-webkit-scrollbar {
     display: none;
 }
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* DEFAULTS */
 
 .navbar {
     height: 70px;
     width: 100vw;
-    background-color: burlywood;
-    /* position: sticky;
-    top: 0px; */
+    background-color: var(--accentlight);
 
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
- 
-/* idea: use display grid para ma center logo? */
 
 .logo {
     margin: auto;
-
+/* 
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: bold; */
 
     position: absolute;
     top: 18px;
@@ -46,9 +55,9 @@ body::-webkit-scrollbar {
 }
 
 .search {
-    background-color: white;
+    background-color: var(--bglight);
     border-radius: 8px;
-    border: 2px solid black;
+    border: 2px solid var(--accentdark);
     padding: .3rem;
 
     display: flex;
@@ -62,6 +71,8 @@ body::-webkit-scrollbar {
 .search button {
     margin-left: auto;
 }
+
+/* FOR MOBILE */
 
 @media screen and (max-width: 715px) {
     .search {
@@ -86,14 +97,16 @@ body::-webkit-scrollbar {
     }
 }
 
+/* FOR MOBILE */
+
 .contact {
     margin-left: 1rem;
     margin-right: auto;
 
     padding: .3rem;
     border-radius: 8px;
-    border: 2px solid black;
-    background-color: white;
+    border: 2px solid var(--accentdark);
+    background-color: var(--bglight);
 }
 
 .contact:hover {
@@ -112,23 +125,22 @@ body::-webkit-scrollbar {
 }
 
 .contact a {
-    text-decoration: none;
-    color: black;
-    
+    color: var(--accentdark);
     font-weight: bold;
 }
 
 .home:hover {
     scale: 1.2;
 } 
+
 .smolnav {
     height: 50px;
-    background-color: black;
+    background-color: var(--accentdark);
     width: 100vw;
 
     white-space: no-wrap;
     overflow-x: auto;
-    scrollbar-color: burlywood rgb(32, 32, 32);
+    scrollbar-color: var(--accentlight) var(--accentdull);
 }
 
 .smolnav ul {
@@ -138,18 +150,17 @@ body::-webkit-scrollbar {
     height: 100%;
 }
 .smolnav li {
-    list-style: none;
     padding: 0 2rem;
 }
 
 .smolnav a {
-    text-decoration: none;
-    color: burlywood;
+    color: var(--accentlight);
     cursor: pointer;
     text-wrap: nowrap;
 }
+
 .smolnav a:hover {
-    color: white;
+    color: var(--accentlighter);
 }
 
 .usli {
@@ -160,11 +171,11 @@ body::-webkit-scrollbar {
 }
 
 .usli1 {
-    background-color: burlywood;
+    background-color: var(--accentlight);
 }
 
 .usli2 {
-    background-color: black;
+    background-color: var(--accentdull);
 }
 
 .usli a {
@@ -176,23 +187,18 @@ body::-webkit-scrollbar {
 
     display: flex;
     justify-content: center;
-    text-decoration: none;
-    
 }
 
 .usli1 p {
-    color: black;
-
-    transform: rotate(-90deg);
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-top: 22px;
+    color: var(--accentdark);
 }
 
 .usli2 p {
-   color: burlywood;
+   color: var(--accentlight);
+}
 
-   transform: rotate(-90deg);
+.usli1 p, .usli2 p {
+    transform: rotate(-90deg);
    font-size: 1.5rem;
    font-weight: bold;
    padding-top: 22px;
@@ -203,23 +209,23 @@ body::-webkit-scrollbar {
     transition: all 0.2s ease-in;
 }
 
+/* HERO SECTION */
+
 .hero {
     height: 80vh;
     width: 100vw;
     background-image: url(images/neg.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -10;
 
-    color: white;
+    color: var(--textlight);
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: first baseline;
     flex-direction: column;
-
-
 }
 
 .hero p {
@@ -231,19 +237,18 @@ body::-webkit-scrollbar {
 .hero button{
     padding: 15px 25px;
     border-radius: 15px;
-    background-color: burlywood;
-    border: 2px solid black;
+    background-color: var(--accentlight);
+    border: 2px solid var(--accentdark);
 }
 
 .hero a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: var(--accentdark);
     font-size: 1rem;
     font-weight: bold;
 }
 
 .hero button:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--accentspecial1);
     transition: all 0.3s ease;
     scale: 1.2;
 }
@@ -251,6 +256,14 @@ body::-webkit-scrollbar {
 .hero h1{
     font-size: 3.5rem;
     margin-left: 5vw;
+}
+
+/* HERO SECTION */
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: var(--accentlight);   
 }
 
 .upper {
@@ -270,16 +283,12 @@ body::-webkit-scrollbar {
     flex-grow: 1;
     height: 100%;
 
-    text-decoration: none;
-
-    color: white;
+    color: var(--textlight);
     font-size: 2.2rem;
 }
-
 .upper a:hover {
     scale: 1.005;
     transition: all 0.5s ease-out;
-
 }
 
 .left {
@@ -301,11 +310,6 @@ body::-webkit-scrollbar {
     background-color: rgb(155, 155, 155);
 }
 
-footer {
-    background-color: burlywood;
-    
-}
-
 .logofooter {
     display: flex;
     justify-content: center;
@@ -319,7 +323,7 @@ footer {
     justify-content: space-evenly;
     align-items: flex-start;
     height: fit-content;
-    padding: 40px 0px;
+    padding: 50px 0px;
 }
 
 .socials {
@@ -339,14 +343,6 @@ footer {
 }
 
 .socials li {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-
-    list-style: none;
-
-    /* border-radius: 50%;
-    background-color: gray; */
     margin: 0px 5px;
 }
 
@@ -358,19 +354,21 @@ footer {
 .findmeon {
     margin-bottom: 30px;
 }
+
 .bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 9px 20px 0px;
+    padding-bottom: 35px;
 }
 
 .links1 a, .links2 a, .links3 a{
-    color: purple;
-    text-decoration: none;
+    color: var(--accentspecial1dark);
 }
 
 .links1 a:hover, .links2 a:hover, .links3 a:hover{
-    color: blue;
+    color: var(--accentspecial2dark);
     text-decoration: underline;
 }
+
+/* FOOTER SECTION */
