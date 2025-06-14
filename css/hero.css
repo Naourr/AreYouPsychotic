@@ -1,0 +1,40 @@
+#hero {
+    min-height: calc(100vh - 120px);
+    width: 100vw;
+    background-image: url(/images/neg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -10;
+    color: var(--textlight);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: first baseline;
+    flex-direction: column;
+}
+#hero p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#hero button{
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: var(--accentlight);
+    border: 2px solid var(--accentdark);
+}
+#hero a {
+    color: var(--accentdark);
+    font-size: 1rem;
+    font-weight: bold;
+}
+#hero button:hover {
+    background-color: var(--accentspecial1dark);
+    transition: all 0.3s ease;
+    scale: 1.2;
+}
+#hero h1{
+    font-size: 3.5rem;
+    margin-left: 5vw;
+}

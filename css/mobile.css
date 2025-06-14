@@ -1,0 +1,18 @@
+@media screen and (max-width: 715px) {
+    .search {
+        width: 15% ;
+    }
+    .search input {
+        width: 50%;
+    }
+    .search button {
+        margin-left: auto;
+    }
+    .smolnav a {
+        font-size: .8rem;
+    }
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
+}

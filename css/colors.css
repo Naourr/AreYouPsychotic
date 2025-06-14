@@ -1,18 +1,14 @@
 :root {
-
     --bgdark: black;
     --bglight: white;
-
     --accentlight: burlywood;
     --accentlighter: white;
     --accentdull: rgb(32, 32, 32);
     --accentdark: black;
-
     --accentspecial1: pink;
     --accentspecial1dark: purple;
     --accentspecial2: cyan;
     --accentspecial2dark: blue;
-
     --textdark: black;
     --textlight: white;
 }

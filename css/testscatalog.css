@@ -1,0 +1,84 @@
+#catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#catalogtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#catalog h1{
+    color: var(--textlight);
+    margin: 60px 20px;
+    font-size: 2rem;
+    flex-shrink: 0;
+    
+}
+#catalog span {
+    width: 50vw;
+    height: 8px;
+    background-color: var(--accentlight);
+    border-radius: 5px;
+}
+.end {
+    width: 110vw;
+    height: 8px;
+    background-color: var(--accentlight);
+    border-radius: 5px;
+    margin: 60px;
+}
+.catalog-test1, .catalog-test2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.catalog-test2 {
+    background-color: rgb(12, 12, 12);
+}
+.card img{
+    background-color: gray;
+    border-radius: 15px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.sidetext {
+    color: var(--textlight);
+    text-align: left;
+}
+.sidetext p {
+    font-size: 1.5rem;
+}
+.card img, .sidetext {
+    height: 30vw;
+    width: 30vw;
+    margin: 60px;
+}
+.BUTTON {
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: var(--accentlight);
+    border: 2px solid var(--accentdark);
+    height: fit-content;
+    width: fit-content;
+    margin-top: 50px;
+}
+.BUTTON a {
+    color: var(--accentdark);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.BUTTON:hover {
+    background-color: var(--accentspecial1dark);
+    transition: all 0.3s ease;
+    scale: 1.2;
+}
