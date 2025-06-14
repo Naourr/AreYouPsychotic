@@ -1,0 +1,62 @@
+
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+    .sidetext p {
+        margin: 30px 0px;
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 920px) {
+    .search {
+        width: 110px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .search {
+        width: 80px;
+    }
+    .card img, .sidetext {
+        margin: 1.2rem;
+        width: 40vw;
+        height: auto;
+    }
+    .BUTTON a {
+      font-size: 1.5rem;
+    }
+    .BUTTON {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logo img {
+        width: 220px;
+    }
+    .contact {
+        visibility: hidden;
+    }
+    .search {
+        visibility: hidden;
+    }
+    .menu {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+    
+}
+
+/* MAEK DROP DOWN MENU HERE */
+@media screen and (max-width: 590px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}

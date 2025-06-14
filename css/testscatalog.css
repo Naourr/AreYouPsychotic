@@ -13,12 +13,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
-#catalog h1{
+#catalogtitle h1 {
     color: var(--textlight);
     margin: 60px 20px;
     font-size: 2rem;
     flex-shrink: 0;
-    
+    text-wrap: nowrap;
 }
 #catalog span {
     width: 50vw;
@@ -49,7 +49,6 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-
 }
 .sidetext {
     color: var(--textlight);
@@ -57,11 +56,16 @@
 }
 .sidetext p {
     font-size: 1.5rem;
+    margin: 50px 0px;
 }
 .card img, .sidetext {
-    height: 30vw;
-    width: 30vw;
-    margin: 60px;
+    margin: 2rem;
+    width: 35vw;
+    height: auto;
+}
+.sidetext h1 {
+    margin-left: 0px;
+    font-size: 2.2rem;
 }
 .BUTTON {
     padding: 15px 25px;
@@ -70,7 +74,6 @@
     border: 2px solid var(--accentdark);
     height: fit-content;
     width: fit-content;
-    margin-top: 50px;
 }
 .BUTTON a {
     color: var(--accentdark);
