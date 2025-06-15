@@ -49,13 +49,7 @@ li {
     z-index: 100;
 }
 .logo {
-    /* margin: auto;
     position: absolute;
-    top: 18px;
-    left: 50vw;
-    transform: translate(-50%); */
-
-    position: sticky;
     top: 0px;
     left: 50vw;
     width: fit-content;
