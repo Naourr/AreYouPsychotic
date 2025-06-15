@@ -22,6 +22,7 @@ body::-webkit-scrollbar {
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -35,18 +36,30 @@ li {
 /* NAVBAR START */
 
 #navbar {
+    position: fixed;
     height: 70px;
     width: 100vw;
     background-color: var(--accentlight);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 100;
 }
 .logo {
-    margin: auto;
+    /* margin: auto;
     position: absolute;
     top: 18px;
     left: 50vw;
+    transform: translate(-50%); */
+
+    position: fixed;
+    top: 0px;
+    left: 50vw;
+    width: fit-content;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translate(-50%);
 }
 .home {
@@ -115,9 +128,12 @@ li {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    width: 100vw;
+    
 }
 .smolnav li {
     padding: 0 2rem;
+
 }
 .smolnav a {
     color: var(--accentlight);

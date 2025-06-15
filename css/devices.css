@@ -44,6 +44,30 @@
         top: 20px;
         left: 15px;
     }
+    #hero {
+        justify-content: center;
+        align-items: center;
+        background-image: url(/images/heg.jpg);
+        background-position: center;
+    }
+    #hero h1 {
+        font-size: 2.8rem;
+    }
+    #hero p {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .heroshadow {
+        position: absolute;
+        top: 3px;
+        left: 0px;
+        width: 100%;
+        min-height: calc(100vh - 120px);
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 5;
+    }
+
 }
 
 
@@ -54,7 +78,20 @@
 
 /* MAEK DROP DOWN MENU HERE */
 @media screen and (max-width: 590px) {
+    .usli {
+        scale: 0.8;
+    }
+}
 
+@media screen and (max-width: 420px) {
+    .sidetext h1 {
+        display: none;
+    }
+}
+@media screen and (min-width: 420px) {
+    .catalogupper h1 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 350px) {
