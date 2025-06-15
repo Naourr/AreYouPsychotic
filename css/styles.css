@@ -16,6 +16,7 @@ body {
     background-color: var(--bgdark);
     color: var(--textdark);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -36,7 +37,9 @@ li {
 /* NAVBAR START */
 
 #navbar {
-    position: fixed;
+    position: sticky;
+    top: 0px;
+    left: 0px;
     height: 70px;
     width: 100vw;
     background-color: var(--accentlight);
@@ -52,7 +55,7 @@ li {
     left: 50vw;
     transform: translate(-50%); */
 
-    position: fixed;
+    position: sticky;
     top: 0px;
     left: 50vw;
     width: fit-content;
@@ -116,12 +119,16 @@ li {
 }
 
 .smolnav {
+    position: sticky;
+    top: 70px;
+    left: 0px;
     height: 50px;
     background-color: var(--accentdark);
     width: 100vw;
     white-space: no-wrap;
     overflow-x: auto;
     scrollbar-color: var(--accentlight) var(--accentdull);
+    z-index: 100;
 }
 .smolnav ul {
     display: flex;
