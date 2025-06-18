@@ -247,6 +247,21 @@ footer {
     flex-direction: column;
     flex-shrink: 0;
 }
+.sigmabox {
+    width: 100px;
+    height: 100px;
+}
+.sigma {
+    background-image: url(/images/aze-sigma.png);
+    width: 100px;
+    height: 100px;
+    background-attachment: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sigma:hover {
+    background-image: url(/images/mogged.png);
+}
 .middle {
     display: flex;
     text-align: left;
