@@ -31,6 +31,14 @@ a {
 li {
     list-style: none;
 }
+#top {
+    position: relative;
+    top: -120px;
+    left: 0px;
+    width: 100vw;
+    height: 0px;
+    background-color: bisque;
+}
 
 /* DEFAULTS END */
 
@@ -299,3 +307,47 @@ footer {
 }
 
 /* FOOTER END */
+
+.icon1.in-view {
+    animation-name: bounce;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-delay: .2s;
+}
+.icon2.in-view {
+    animation-name: bounce;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-delay: .25s;
+}
+.icon3.in-view {
+    animation-name: bounce;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-delay: .3s;
+}
+.icon4.in-view {
+    animation-name: bounce;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-delay: .35s;
+}
+
+
+@keyframes bounce {
+    0% {
+
+    }
+    100% {
+        scale: 1.15;
+        transform: translate(0px, -30px);
+    }
+}
