@@ -1,7 +1,6 @@
 @import url(colors.css);
 @import url(hero.css);
 @import url(testscatalog.css);
-@import url(devices.css);
 
 /* DEFAULTS START */
 
@@ -116,10 +115,12 @@ li {
 } 
 .menu {
     position: absolute;
-    top: 20px;
-    right: 2000px;
+    bottom: 2000px;
+    left: 15px;
 }
-
+.menu:hover {
+    scale: 1.2;
+}
 .smolnav {
     position: sticky;
     top: 70px;
