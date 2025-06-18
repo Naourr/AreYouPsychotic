@@ -1,6 +1,5 @@
 #catalog {
     position: relative;
-    margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +11,7 @@
     justify-content: left;
     align-items: center;
 }
-.catalogupper h1 {
+.catalogupper h1{
     text-align: left;
     font-size: 2rem;
     color: var(--textlight);
@@ -39,7 +38,7 @@
 }
 #catalogtitle h1 {
     color: var(--textlight);
-    margin: 1rem 20px;
+    margin: 1.8rem 20px;
     font-size: 2rem;
     flex-shrink: 0;
     text-wrap: nowrap;
