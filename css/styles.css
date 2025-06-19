@@ -69,6 +69,9 @@ li {
 }
 .home {
     margin-right: 1rem;
+}
+.home:hover {
+    scale: 1.2;
 } 
 .search {
     margin-right: 1rem;
@@ -111,9 +114,6 @@ li {
     color: var(--accentdark);
     font-weight: bold;
 }
-.home:hover {
-    scale: 1.2;
-} 
 .menu {
     top: -30px;
     left: 20px;
@@ -353,9 +353,12 @@ footer {
 .socials li {
     margin: 0px 5px;
 }
+.socialsicon img {
+    transition: all 0.2s ease-out;
+}
 .socialsicon img:hover {
     scale: 1.2;
-    transition: all 0.3s ease-out ;
+    transition: all 0.3s ease-out;
 }
 .findmeon {
     margin-bottom: 30px;
