@@ -7,8 +7,7 @@
     background-image: url(/images/neg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    z-index: 4;
+    background-position: center; 
     color: var(--textlight);
     display: flex;
     text-align: center;
@@ -27,6 +26,7 @@
     border-radius: 15px;
     background-color: var(--accentlight);
     border: 2px solid var(--accentdark);
+    transition: all 0.3s ease;
     z-index: 6;
 }
 #hero a {

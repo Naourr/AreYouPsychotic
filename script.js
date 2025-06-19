@@ -1,3 +1,13 @@
+const menubar = document.querySelector('.menubar');
+const menu = document.querySelector('.menu');
+
+
+menu.addEventListener('click', function(){
+	menubar.classList.toggle('active');
+});
+
+
+
 // Trigger CSS Animations when elements are scrolled into view
 
 // This JS uses the Intersection Observer API to determine if objects are within the viewport

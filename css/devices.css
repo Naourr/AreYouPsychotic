@@ -26,6 +26,14 @@
     }
 }
 @media screen and (max-width: 640px) { /* MAEK DROP DOWN MENU HERE */
+    .menubar {
+        top: -200px;
+        transition: all 0.3s ease;
+    }
+    .menubar.active {
+        top: 120px;
+        transition: all 0.3s ease;
+    }
     .logo img {
         width: 220px;
     }
@@ -36,9 +44,7 @@
         visibility: hidden;
     }
     .menu {
-        position: absolute;
-        top: 20px;
-        left: 15px;
+        transform: translate(0px, 49px);
     }
     #hero {
         justify-content: center;

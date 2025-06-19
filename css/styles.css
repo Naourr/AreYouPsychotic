@@ -37,7 +37,7 @@ li {
     left: 0px;
     width: 100vw;
     height: 0px;
-    background-color: bisque;
+    background-color: var(--debug);
 }
 
 /* DEFAULTS END */
@@ -54,7 +54,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 100;
+    z-index: 10;
 }
 .logo {
     position: absolute;
@@ -115,11 +115,65 @@ li {
     scale: 1.2;
 } 
 .menu {
-    position: absolute;
-    top: 20px;
-    right: 2000px;
+    top: -30px;
+    left: 20px;
+    position: fixed;
 }
-
+.menu img:hover {
+    scale: 1.1;
+}
+.menubar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accentdulllighter);
+    position: fixed;
+    top: -200px;
+    left: 0px;
+    width: 100vw;
+    z-index: 9;
+}
+.menubar li {
+    margin: 1rem;
+}
+.search1 {
+    background-color: var(--bglight);
+    border-radius: 8px;
+    border: 2px solid var(--accentdark);
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+}
+.search1 input {
+    width: 100%;
+}
+.search1 button {
+    margin-left: auto;
+}
+.contact1 {
+    padding: .3rem;
+    border-radius: 8px;
+    border: 2px solid var(--accentdark);
+    background-color: var(--bglight);
+}
+.contact1:hover {
+    scale: 1.15;
+}
+.search1:hover {
+    scale: 1.1;
+}
+.search1 input, .search1 button {
+    border: none;
+    background-color: transparent;
+    padding: auto .5rem;
+    outline: none;
+}
+.contact1 a {
+    color: var(--accentdark);
+    font-weight: bold;
+}
 .smolnav {
     position: sticky;
     top: 70px;
@@ -130,19 +184,17 @@ li {
     white-space: no-wrap;
     overflow-x: auto;
     scrollbar-color: var(--accentlight) var(--accentdull);
-    z-index: 100;
+    z-index: 10;
 }
 .smolnav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 100vw;
-    
+    width: 100vw;  
 }
 .smolnav li {
     padding: 0 2rem;
-
 }
 .smolnav a {
     color: var(--accentlight);
@@ -176,6 +228,7 @@ li {
     border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
+    transition: all 0.2s ease-in;
 }
 .usli1 p {
     color: var(--accentdark);
@@ -187,7 +240,7 @@ li {
     transform: rotate(-90deg);
     font-size: 1.5rem;
     font-weight: bold;
-   padding-top: 22px;
+    padding-top: 22px;
 }
 .usli a:hover {
     transform: translate(-20px, 0px);
@@ -199,7 +252,8 @@ li {
 /* FOOTER START */
 
 footer {
-    background-color: var(--accentlight);   
+    background-color: var(--accentlight);
+    z-index: 10;
 }
 .upper {
     display: flex;
@@ -355,8 +409,6 @@ footer {
     animation-iteration-count: 2;
     animation-delay: .35s;
 }
-
-
 @keyframes bounce {
     0% {
 

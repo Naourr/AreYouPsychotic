@@ -4,6 +4,7 @@
     --accentlight: burlywood;
     --accentlighter: white;
     --accentdull: rgb(32, 32, 32);
+    --accentdulllighter: rgb(50, 50, 50);
     --accentdark: black;
     --accentspecial1: pink;
     --accentspecial1dark: purple;
@@ -11,4 +12,5 @@
     --accentspecial2dark: blue;
     --textdark: black;
     --textlight: white;
+    --debug: greenyellow;
 }

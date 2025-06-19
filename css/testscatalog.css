@@ -106,6 +106,7 @@
     border: 2px solid var(--accentdark);
     height: fit-content;
     width: fit-content;
+    transition: all 0.3s ease;
 }
 .BUTTON a {
     color: var(--accentdark);
