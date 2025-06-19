@@ -88,9 +88,9 @@
     }
 }
 @media screen and (max-width: 590px) {
-    .usli {
+    /* .usli {
         scale: 0.8;
-    }
+    } */
 }
 @media screen and (max-width: 420px) {
     .sidetext h1 {
