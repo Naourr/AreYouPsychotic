@@ -235,7 +235,7 @@ li {
     text-wrap: wrap;
 }
 .usli1bar {
-    background-color: var(--accentlight);
+    background-color: var(--accentlight);  
 }
 .usli2bar {
     background-color: var(--accentdark);
@@ -302,6 +302,14 @@ li {
     transform: translate(-20px, 0px);
     transition: all 0.2s ease-in;
 } 
+.usli1.active {
+    border: 2px solid var(--accentdark);
+    transition: all 0.2s ease-in;
+}
+.usli2.active {
+    border: 2px solid var(--accentlight);
+    transition: all 0.2s ease-in;
+}
 .usli1 p {
     color: var(--accentdark);
 }

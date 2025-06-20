@@ -5,16 +5,16 @@ const usli2 = document.querySelector('.usli2');
 const usli1bar = document.querySelector('.usli1bar');
 const usli2bar = document.querySelector('.usli2bar');
 
-
-
 menu.addEventListener('click', function(){
 	menubar.classList.toggle('active');
 });
 usli1.addEventListener('click', function(){
 	usli1bar.classList.toggle('active');
+	usli1.classList.toggle('active');
 });
 usli2.addEventListener('click', function(){
 	usli2bar.classList.toggle('active');
+	usli2.classList.toggle('active');
 });
 document.addEventListener("DOMContentLoaded", () => {
 	const observer = new IntersectionObserver(entries => {
