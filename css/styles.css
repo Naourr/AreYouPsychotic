@@ -215,7 +215,7 @@ li {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 120px);
-    z-index: 100;
+    z-index: 8;
     justify-content: space-evenly;
 }
 .BOX1, .BOX2 {
@@ -281,7 +281,7 @@ li {
     flex-direction: column;
     height: calc(100vh - 120px);
     justify-content: space-evenly;
-    z-index: 99;
+    z-index: 8;
     top: 120px;
 }
 .mainBOX1, .mainBOX2 {
@@ -294,7 +294,7 @@ li {
 
 footer {
     background-color: var(--accentlight);
-    z-index: 10;
+    z-index: 7;
 }
 .upper {
     display: flex;
