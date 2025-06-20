@@ -5,6 +5,10 @@ const usli2 = document.querySelector('.usli2');
 const usli1bar = document.querySelector('.usli1bar');
 const usli2bar = document.querySelector('.usli2bar');
 
+const testcards = document.querySelector('.testcards');
+const back = document.querySelector('.back');
+const next = document.querySelector('.next');
+
 menu.addEventListener('click', function(){
 	menubar.classList.toggle('active');
 });
@@ -16,6 +20,13 @@ usli2.addEventListener('click', function(){
 	usli2bar.classList.toggle('active');
 	usli2.classList.toggle('active');
 });
+back.addEventListener('click', function(){
+	testcards.classList.toggle('toback');
+});
+next.addEventListener('click', function(){
+	testcards.classList.toggle('tonext');
+});
+
 document.addEventListener("DOMContentLoaded", () => {
 	const observer = new IntersectionObserver(entries => {
 	  entries.forEach(entry => {

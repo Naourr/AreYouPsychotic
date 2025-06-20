@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--debug);
+    background-color: var(--accentdulldarker);
+    color: var(--accentlight);
     height: 40vh;
     font-size: 2rem;
     text-align: center;
@@ -22,15 +23,36 @@
     color: var(--accentlight);
 }
 .test {
-    background-color: rgb(15, 15, 15);
+    background-color: var(--accentdulldarker);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    height: calc(100vh - 120px);
-    width: 100%;
+    align-items: left;
+    min-height: calc(100vh - 120px);
+    width: 100vw;
 }
+.testcards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: hidden;
+    overflow-x: hidden;
+    width: max-content;
+    transition: all 0.3s ease-out;
+}
+/* .testcards.toback {
+    transform: translate(100vw 0px);
+    transition: all 0.3s ease-out;
+}
+.testcards.tonext {
+    transform: translate(-100vw 0px);
+    transition: all 0.3s ease-out;
+} */
+
+
 .testcard {
+    margin: auto 10vw;
+    flex-shrink: 0;
     background-color: var(--accentlight);
     display: flex;
     flex-direction: column;
@@ -38,7 +60,7 @@
     align-items: center;
     text-align: center;
     height: fit-content;
-    width: 80%;
+    width: 80vw;
     border-radius: 10px;
     padding: 3rem;
     font-size: 1.2rem;
@@ -56,7 +78,7 @@
 }
 .answercard {
     background-color: var(--accentdark);
-    color: var(--accentlight);
+    color: var(--textlight);
     border-radius: 5px;
     padding: 1rem;
     margin: 1rem;
@@ -66,18 +88,42 @@
     scale: 1.2;
 }
 .progressbar {
+    flex-shrink: 0;
     color: var(--accentlighter);
-    width: 100%;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin: auto 2rem;
 }
 .progressbar span {
-    width: 50%;
+    width: 100%;
     height: 5px;
     border-radius: 3px;
-    background-color: var(--accentspecial2);
-    margin-bottom: 1rem;
+    background-color: var(--accentlighter);
+    margin: 2rem auto 1rem auto;
+}
+.back, .next {
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.back:hover, .next:hover {
+    scale: 1.15;
+}
+.back {
+    border-right: 20px solid var(--accentlight); 
+}
+.next {
+    border-left: 20px solid var(--accentlight);
+}
+.idk {
+    display: flex;
+    width: 100vw;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
