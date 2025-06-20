@@ -208,7 +208,62 @@ li {
 /* NAVBAR END */
 
 /* USLI START */
+.mainBAUX {
+    position: fixed;
+    display: flex;
+    left: 100vw;
+    flex-direction: column;
+    height: calc(100vh - 120px);
+    justify-content: space-evenly;
+    z-index: 8;
+    top: 120px;
+}
+.mainBOX1, .mainBOX2 {
+    height: 50%;
+}
+.usli1bar, .usli2bar{
+    width: 100vw;
+    z-index: 99;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
 
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 1rem 5rem 1rem 1rem;
+    text-align: left;
+    text-wrap: wrap;
+}
+.usli1bar {
+    background-color: var(--accentlight);
+}
+.usli2bar {
+    background-color: var(--accentdark);
+}
+.usli1bar.active, .usli2bar.active{
+    transform: translate(-100vw, 0px);
+    transition: all 0.3s ease-in-out;
+}
+.usli1textbox, .usli2textbox {
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
+}
+.usli1textbox::-webkit-scrollbar, .usli2textbox::-webkit-scrollbar {
+    display: none;
+}
+.usli1textbox {
+    color: var(--accentdark);
+}
+.usli2textbox {
+    color: var(--accentlight);
+}
+.usli1textbox p {
+    color: var(--accentspecial1dark);
+}
+.usli2textbox p {
+    color: var(--accentspecial2);
+}
 .BAUX {
     position: fixed;
     right: -50px;
@@ -219,7 +274,7 @@ li {
     justify-content: space-evenly;
 }
 .BOX1, .BOX2 {
-    height: 46%;
+    height: 50%;
     display: flex;
 }
 .BOX1 {
@@ -257,35 +312,6 @@ li {
     transform: rotate(-90deg);
     font-size: 1.5rem;
     font-weight: bold;
-}
-.usli1bar, .usli2bar{
-    width: 100vw;
-    z-index: 99;
-    transition: all 0.3s ease-in-out;
-    height: 100%;
-}
-.usli1bar {
-    background-color: var(--accentlight);
-}
-.usli2bar {
-    background-color: var(--accentdark);
-}
-.usli1bar.active, .usli2bar.active{
-    transform: translate(-100vw, 0px);
-    transition: all 0.3s ease-in-out;
-}
-.mainBAUX {
-    position: fixed;
-    display: flex;
-    left: 100vw;
-    flex-direction: column;
-    height: calc(100vh - 120px);
-    justify-content: space-evenly;
-    z-index: 8;
-    top: 120px;
-}
-.mainBOX1, .mainBOX2 {
-    height: 46%;
 }
 
 /* USLI END */
