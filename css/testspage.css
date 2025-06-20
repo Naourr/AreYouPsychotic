@@ -48,7 +48,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
 }
 .question {
@@ -59,7 +59,7 @@
     color: var(--accentlight);
     border-radius: 5px;
     padding: 1rem;
-    margin: 0px 1rem;
+    margin: 1rem;
     font-size: 1.2rem;
 }
 .answercard:hover {
