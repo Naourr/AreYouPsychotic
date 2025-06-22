@@ -87,8 +87,10 @@
         background-position: center;
     }
 }
-@media screen and (max-width: 590px) {
-
+@media screen and (max-width: 550px) {
+    .logofooter {
+        width: 80vw;
+    }
 }
 @media screen and (max-width: 420px) {
     .sidetext h1 {
@@ -98,5 +100,27 @@
 @media screen and (min-width: 420px) {
     .catalogupper h1 {
         display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .cataloglower {
+        display: flex;
+        flex-direction: column;
+    }
+    .card img {
+        width: 80%;
+        margin-bottom: 0;
+    }
+    #stopresisting {
+        width: 80vw;
+    }
+    .sidetext {
+        width: 80%;
+    }
+    .catalog-test2 .cataloglower {
+        flex-direction: column-reverse;
+    }
+    .catalogupper {
+        margin-bottom: 2rem;
     }
 }
