@@ -18,6 +18,7 @@ body {
     color: var(--textdark);
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding-top: 7rem ;
 }
 body::-webkit-scrollbar {
     display: none;
