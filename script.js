@@ -78,32 +78,3 @@ function checkAllAnswered() {
 document.querySelectorAll('.five-toggle input[type="radio"]').forEach(radio => {
   	radio.addEventListener('change', checkAllAnswered);
 });
-
-// When the button is clicked, show the result section and calculate score
-document.querySelector('.see-results').addEventListener('click', function() {
- 	//  e.preventDefault(); // Prevent page reload
-	let total = 0;
-  	document.querySelectorAll('.five-toggle').forEach(group => {
-		const checked = group.querySelector('input[type="radio"]:checked');
-		if (checked) total += Number(checked.value);
-	});
-
-  	document.getElementById('score').textContent = total;
-
-  	var scoretitle; 
-	if (total >= 0 && total <= 2) {
-		scoretitle = "Youre not autistic. Calm down.";
-	} else if (total >= 3 && total <= 5 ) {
-		scoretitle = "You could be mildy autistic.";
-	} else if (total >= 6 && total <= 8 ) {
-		scoretitle = "You could actually be autistic.";
-	} else {
-		scoretitle = "You are definitely autistic.";
-	}
-
-	document.getElementById('scoretitle').textContent = scoretitle;
-
-  // Show the result section
-  	document.getElementById('results').style.display = 'block';
-  
-});
