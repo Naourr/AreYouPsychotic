@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" href="/images/nega.webp">
+    
     <title>Are You Psychotic?</title>
 </head>
 <body>
@@ -142,9 +144,9 @@
         </p>
     </section>
 
-    <section class="test">
-        <div class="testcards">
-            <div class="testcard">
+    <section class="test swiper">
+        <div class="testcards swiper-wrapper">
+            <div class="testcard swiper-slide">
                 <div class="question">
                     <h1>I often find myself pooping on my hands because I dont trust public toilets.</h1>
                 </div>
@@ -166,9 +168,9 @@
                     </div>
                 </div>
             </div>
-            <div class="testcard">
+            <div class="testcard swiper-slide">
                 <div class="question">
-                    <h1>I often find myself pooping on my hands because I dont trust public toilets.</h1>
+                    <h1>I am cringe. help. kdjfnckjexnankdssahd. sjdjabcbmecd. ldfkjennc.</h1>
                 </div>
                 <div class="answercards">
                     <div class="answercard">
@@ -189,14 +191,15 @@
                 </div>
             </div>
         </div>
-        <div class="idk">
-            <div class="back"></div>
-                <div class="progressbar">
-                    <span></span>
-                    <p>Question 1 of 10</p>
-                </div>
-            <div class="next"></div>
-        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <!-- <div class="idk">
+            <div class="progressbar">
+            <span></span>
+            <p>Question 1 of 10</p>
+        </div> -->
+    
     </section>
 
     <!-- UNIQUE PAGE CONTENT END -->
@@ -279,6 +282,8 @@
             </p>
         </section>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
 </body>
 </html>

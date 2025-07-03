@@ -1,3 +1,14 @@
+const swiper = new Swiper('.swiper', {
+	loop: false,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	slidesPerView: 'auto',
+	spaceBetween: 0,
+	centeredSlides: true
+});
+
 const menubar = document.querySelector('.menubar');
 const menu = document.querySelector('.menu');
 const usli1 = document.querySelector('.usli1');
@@ -9,6 +20,7 @@ const testcards = document.querySelector('.testcards');
 const back = document.querySelector('.back');
 const next = document.querySelector('.next');
 
+
 menu.addEventListener('click', function(){
 	menubar.classList.toggle('active');
 });
@@ -19,12 +31,6 @@ usli1.addEventListener('click', function(){
 usli2.addEventListener('click', function(){
 	usli2bar.classList.toggle('active');
 	usli2.classList.toggle('active');
-});
-back.addEventListener('click', function(){
-	testcards.classList.toggle('toback');
-});
-next.addEventListener('click', function(){
-	testcards.classList.toggle('tonext');
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -40,3 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
 	const allAnimatedElements = document.querySelectorAll('.animate');
 	allAnimatedElements.forEach((element) => observer.observe(element));
 }); 
+

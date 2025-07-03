@@ -22,70 +22,9 @@
     padding: 4rem;
     color: var(--accentlight);
 }
-.test {
-    background-color: var(--accentdulldarker);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: left;
-    min-height: calc(100vh - 120px);
-    width: 100vw;
-}
-.testcards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    white-space: hidden;
-    overflow-x: hidden;
-    width: max-content;
-    transition: all 0.3s ease-out;
-}
-/* .testcards.toback {
-    transform: translate(100vw 0px);
-    transition: all 0.3s ease-out;
-}
-.testcards.tonext {
-    transform: translate(-100vw 0px);
-    transition: all 0.3s ease-out;
-} */
 
-
-.testcard {
-    margin: auto 10vw;
-    flex-shrink: 0;
-    background-color: var(--accentlight);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    height: fit-content;
-    width: 80vw;
-    border-radius: 10px;
-    padding: 3rem;
-    font-size: 1.2rem;
-}
-.answercards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.question {
-    margin-bottom: 3rem;
-}
-.answercard {
-    background-color: var(--accentdark);
-    color: var(--textlight);
-    border-radius: 5px;
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.2rem;
-}
 .answercard:hover {
-    scale: 1.2;
+    scale: 1.15;
 }
 .progressbar {
     flex-shrink: 0;
@@ -104,21 +43,6 @@
     border-radius: 3px;
     background-color: var(--accentlighter);
     margin: 2rem auto 1rem auto;
-}
-.back, .next {
-    width: 0; 
-    height: 0; 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}
-.back:hover, .next:hover {
-    scale: 1.15;
-}
-.back {
-    border-right: 20px solid var(--accentlight); 
-}
-.next {
-    border-left: 20px solid var(--accentlight);
 }
 .idk {
     display: flex;
