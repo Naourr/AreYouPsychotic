@@ -5,7 +5,19 @@
 @import url(testspage.css);
 
 /* DEFAULTS START */
-
+#preloader {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
 * {
     box-sizing: border-box;
     margin: 0px;
