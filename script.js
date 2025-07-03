@@ -47,3 +47,63 @@ document.addEventListener("DOMContentLoaded", () => {
 	allAnimatedElements.forEach((element) => observer.observe(element));
 }); 
 
+document.querySelectorAll('.answercards').forEach(group => { //for each tapos yung group yung lahat ng elements sa loob. sa kada .answercards na meron.
+    // Track if this group has been answered
+    group.dataset.answered = "false"; // sinet as false sa pinakaunang pagload?
+    group.addEventListener('change', function() { //event listener yah
+        if (group.dataset.answered === "false") { 
+            group.dataset.answered = "true";
+            // Slide to next slide
+            swiper.slideNext();
+        }
+        // If already answered, do nothing (prevents sliding on answer change)
+		//midyo diko maabsorb pero le goo
+    });
+});
+
+function checkAllAnswered() {
+	const groups = document.querySelectorAll('.five-toggle');
+	let allAnswered = true;
+	groups.forEach(group => {
+		const name = group.querySelector('input[type="radio"]').name;
+		if (!group.querySelector('input[name="' + name + '"]:checked')) {
+		allAnswered = false;
+		}
+	});
+	// Show or hide the button
+	document.querySelector('.see-results').style.display = allAnswered ? 'block' : 'none';
+}
+
+// Listen for changes on all radios
+document.querySelectorAll('.five-toggle input[type="radio"]').forEach(radio => {
+  	radio.addEventListener('change', checkAllAnswered);
+});
+
+// When the button is clicked, show the result section and calculate score
+document.querySelector('.see-results').addEventListener('click', function() {
+ 	//  e.preventDefault(); // Prevent page reload
+	let total = 0;
+  	document.querySelectorAll('.five-toggle').forEach(group => {
+		const checked = group.querySelector('input[type="radio"]:checked');
+		if (checked) total += Number(checked.value);
+	});
+
+  	document.getElementById('score').textContent = total;
+
+  	var scoretitle; 
+	if (total >= 0 && total <= 2) {
+		scoretitle = "Youre not autistic. Calm down.";
+	} else if (total >= 3 && total <= 5 ) {
+		scoretitle = "You could be mildy autistic.";
+	} else if (total >= 6 && total <= 8 ) {
+		scoretitle = "You could actually be autistic.";
+	} else {
+		scoretitle = "You are definitely autistic.";
+	}
+
+	document.getElementById('scoretitle').textContent = scoretitle;
+
+  // Show the result section
+  	document.getElementById('results').style.display = 'block';
+  
+});

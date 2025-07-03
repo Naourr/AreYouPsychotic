@@ -595,4 +595,65 @@ footer {
 
 }
 
+
+input[type="radio"] {
+    display: none;
+}
+
+.answercard-radio:checked + .answercard {
+    background-color: var(--accentspecial1dark);
+}
+.button {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    z-index: 2;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    display: none;
+}
+.button:hover {
+    background-color: var(--accentspecial1dark);
+    color: white;
+    border: 2px solid var(--accentspecial1dark);
+    transition: all 0.3s ease;
+}
+.testheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accentdulldarker);
+    color: var(--accentlight);
+    height: 40vh;
+    font-size: 2rem;
+    text-align: center;
+}
+.result-header {
+    background-color: var(--bgdark);
+}
+.testdescription {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+    height: fit-content;
+    font-size: 1.5rem;
+    text-align: left;
+
+    padding: 4rem;
+    color: var(--accentlight);
+}
+.result-description {
+    background-color: var(--accentdulldarker);
+}
+.answercard:hover {
+    scale: 1.15;
+}
+#results {
+    display: none;
+}
 /* TEST PAGE SPEEDRUN END */

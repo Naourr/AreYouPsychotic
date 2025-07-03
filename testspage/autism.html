@@ -150,58 +150,83 @@
                 <div class="question">
                     <h1>I often find myself pooping on my hands because I dont trust public toilets.</h1>
                 </div>
-                <div class="answercards">
-                    <div class="answercard">
-                        <p>Always</p>
-                    </div>
-                    <div class="answercard">
-                        <p>Sometimes</p>
-                    </div>
-                    <div class="answercard">
-                        <p>Uhh?</p>
-                    </div>
-                    <div class="answercard">
-                        <p>Rarely</p>
-                    </div>
-                    <div class="answercard">
-                        <p>Never</p>
-                    </div>
+                <div class="answercards five-toggle">
+                    <input id="question1opt1" class="answercard-radio" name="forquestion1" type="radio" value="4">
+                    <label for="question1opt1" class="answercard">Always</label>
+
+                    <input id="question1opt2" class="answercard-radio" name="forquestion1" type="radio" value="3">
+                    <label for="question1opt2" class="answercard">Sometimes</label> 
+
+                    <input id="question1opt3" class="answercard-radio" name="forquestion1" type="radio" value="2">
+                    <label for="question1opt3" class="answercard">Uhh??</label> 
+
+                    <input id="question1opt4" class="answercard-radio" name="forquestion1" type="radio" value="1">
+                    <label for="question1opt4" class="answercard">Rarely</label> 
+
+                    <input id="question1opt5" class="answercard-radio" name="forquestion1" type="radio" value="0">
+                    <label for="question1opt5" class="answercard">Never</label> 
                 </div>
             </div>
             <div class="testcard swiper-slide">
                 <div class="question">
                     <h1>I am cringe. help. kdjfnckjexnankdssahd. sjdjabcbmecd. ldfkjennc.</h1>
                 </div>
-                <div class="answercards">
-                    <div class="answercard">
-                        <p>Always</p>
-                    </div>
-                    <div class="answercard">
-                        <p>Sometimes</p>
-                    </div>
-                    <div class="answercard">
-                        <p>Uhh?</p>
-                    </div>
-                    <div class="answercard">
-                        <p>Rarely</p>
-                    </div>
-                    <div class="answercard">
-                        <p>Never</p>
-                    </div>
+                <div class="answercards five-toggle">
+                    <input id="question2opt1" class="answercard-radio" name="forquestion2" type="radio" value="4">
+                    <label for="question2opt1" class="answercard">Always</label>
+
+                    <input id="question2opt2" class="answercard-radio" name="forquestion2" type="radio" value="3">
+                    <label for="question2opt2" class="answercard">Sometimes</label> 
+
+                    <input id="question2opt3" class="answercard-radio" name="forquestion2" type="radio" value="2">
+                    <label for="question2opt3" class="answercard">Uhh??</label> 
+
+                    <input id="question2opt4" class="answercard-radio" name="forquestion2" type="radio" value="1">
+                    <label for="question2opt4" class="answercard">Rarely</label> 
+
+                    <input id="question2opt5" class="answercard-radio" name="forquestion2" type="radio" value="0">
+                    <label for="question2opt5" class="answercard">Never</label> 
+                </div>
+            </div>
+            <div class="testcard swiper-slide">
+                <div class="question">
+                    <h1>Do you enjoy coding with AI assistants?</h1>
+                </div>
+                <div class="answercards five-toggle">
+                    <input id="question3opt1" class="answercard-radio" name="forquestion3" type="radio" value="4">
+                    <label for="question3opt1" class="answercard">Always</label>
+
+                    <input id="question3opt2" class="answercard-radio" name="forquestion3" type="radio" value="3">
+                    <label for="question3opt2" class="answercard">Sometimes</label> 
+
+                    <input id="question3opt3" class="answercard-radio" name="forquestion3" type="radio" value="2">
+                    <label for="question3opt3" class="answercard">Uhh??</label> 
+
+                    <input id="question3opt4" class="answercard-radio" name="forquestion3" type="radio" value="1">
+                    <label for="question3opt4" class="answercard">Rarely</label> 
+
+                    <input id="question3opt5" class="answercard-radio" name="forquestion3" type="radio" value="0">
+                    <label for="question3opt5" class="answercard">Never</label> 
                 </div>
             </div>
         </div>
 
+        <a href="#results" class="button see-results">See results</a>
         <div class="swiper-pagination"></div>
-
-        <!-- <div class="idk">
-            <div class="progressbar">
-            <span></span>
-            <p>Question 1 of 10</p>
-        </div> -->
-    
     </section>
-
+    <section id="results">
+        <section class="testheader result-header">
+            <h1>Test Results</h1>
+        </section>
+        <section class="testdescription result-description">
+            <h1>Your score: <span id="score"></span>/12</h1><br><br>
+            <h1><span id="scoretitle"></span></h1><br>
+            <p>Autism is Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis totam voluptatibus deserunt incidunt quibusdam, culpa explicabo ipsa fuga repudiandae itaque velit esse corrupti temporibus blanditiis natus unde facilis rem quo!
+                <br><br>it usually means you are Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci assumenda, nihil impedit recusandae iure vitae, nulla nostrum dolorum dolore numquam natus officiis nam. Voluptate provident possimus cupiditate nesciunt inventore?
+                but idk man.<br><br>Just take another quiz.
+            </p>
+        </section>
+    </section>
     <!-- UNIQUE PAGE CONTENT END -->
 
     <footer  id="footer">
